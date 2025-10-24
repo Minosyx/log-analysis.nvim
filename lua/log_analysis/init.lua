@@ -241,12 +241,12 @@ function M.setup(opts)
 	-- Autocmd to apply highlights on buffer enter
 	vim.api.nvim_create_autocmd("BufEnter", {
 		pattern = "*",
-		callback = apply_highlights(),
+		callback = apply_highlights,
 	})
 
 	-- Cleanup on exit
 	vim.api.nvim_create_autocmd("VimLeave", {
-		callback = clear_highlight_groups(),
+		callback = clear_highlight_groups,
 	})
 end
 
