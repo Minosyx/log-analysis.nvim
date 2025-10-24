@@ -1,1 +1,1 @@
-require("log-analysis")
+require("log-analysis").setup()
