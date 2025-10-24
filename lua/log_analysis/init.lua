@@ -3,6 +3,9 @@
 local M = {}
 
 -- Default configuration
+---@class Config
+---@field filters_file string Path to the filters JSON file
+---@field max_filters number Maximum number of filters allowed
 M.config = {
 	filters_file = vim.fn.stdpath("config") .. "/log_analysis_filters.json",
 	max_filters = 20,
